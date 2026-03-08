@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        {course && course.lessons && (
+				{course && course.lessons && (
           <ul>
             {course.lessons.map((lesson) => (
               <li key={lesson.name}>
@@ -19,7 +19,7 @@ export default function Home() {
             ))}
           </ul>
         )}
-      </main>
+			</main>
     </div>
   );
 }
